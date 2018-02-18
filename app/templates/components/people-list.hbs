@@ -1,0 +1,10 @@
+
+<ul>
+	 {{#each items as |item index|}}
+	 	<li>
+			{{#link-to 'details.detail' item.id}}{{item.name}}{{/link-to}}
+			{{#if item.title}}: {{item.title}}{{/if}}
+			{{#if item.dates}} [{{item.dates}}]{{/if}}
+		</li>
+	 {{/each}}
+</ul>
